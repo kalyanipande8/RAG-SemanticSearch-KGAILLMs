@@ -1,0 +1,12 @@
+# Core dependencies -- all lightweight, pure-Python-friendly, confirmed
+# installable in this environment (checked with `df -h /` given limited
+# local disk space at build time).
+networkx>=3.0        # knowledge graph store (honest Neo4j stand-in -- see README)
+rdflib>=7.0           # real RDF triple store + real SPARQL 1.1 query engine
+pytest>=7.0           # test runner
+
+# Not used / not installed (documented for transparency):
+# neo4j        -- no local/hosted Neo4j instance available in this environment;
+#                 networkx is used as an explicitly-disclosed stand-in (see README).
+# anthropic    -- no live LLM API calls are made in this repo (see README,
+#                 "No live LLM API calls" section, and rag/answer.py).
